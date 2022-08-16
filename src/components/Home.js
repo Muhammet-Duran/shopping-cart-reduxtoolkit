@@ -1,11 +1,26 @@
+import { useEffect } from "react";
 import { useGetAllProductsQuery } from "../features/productsApi";
+import { useDispatch, useSelector } from "react-redux";
+import { addToCart, getTotals } from "features/cartSlice";
+// import { useNavigate } from "react-router-dom";
 
 function Home() {
   const { data, error, isLoading } = useGetAllProductsQuery();
-  console.log(data, "veri");
+  const cart = useSelector((state) => state.cartSlice);
+  const dispatch = useDispatch();
+  // let navigate = useNavigate();
+
+  useEffect(() => {
+    dispatch(getTotals());
+  }, [cart, dispatch]);
+
+  const handleAddToCart = (product) => {
+    dispatch(addToCart(product));
+    // navigate("/cart");
+  };
 
   return (
-    <div className="py-8 px-16">
+    <div className="py-8 px-3 container mx-auto">
       {isLoading ? (
         <p>Loading...</p>
       ) : error ? (
@@ -19,7 +34,7 @@ function Home() {
             {data?.map((product) => (
               <div
                 key={product.productId}
-                className="w-64 h-96 max-w-full flex justify-between flex-col my-4 mx-auto rounded-2xl p-4 shadow-shadow-1"
+                className="w-64 h-96 max-w-full flex justify-between flex-col my-4 mx-0 rounded-2xl p-4 shadow-shadow-1"
               >
                 <h3 className="font-normal text-2xl">{product.title}</h3>
 
@@ -33,7 +48,10 @@ function Home() {
                   <span>{product.description}</span>
                   <span className="font-bold text-xl">{product.price}</span>
                 </div>
-                <button className="w-full h-11 rounded-md mt-8 font-normal border-none cursor-pointer outline-none bg-blue-700  text-white tracking-[1.15px]">
+                <button
+                  onClick={() => handleAddToCart(product)}
+                  className="w-full h-11 rounded-md mt-8 font-normal border-none cursor-pointer outline-none bg-blue-700  text-white tracking-[1.15px]"
+                >
                   Add To Cart
                 </button>
               </div>

@@ -5,10 +5,9 @@
       "brand": "Iphone",
       "description": "6-inch display",
       "color": "pink",
-      "price": "$999",
+      "price": "999",
       "discount": 39,
-      "imgUrl": "/assets/product-images/iphone12pro.jpeg",
-      "quantity": 1
+      "imgUrl": "/assets/product-images/iphone12pro.jpeg"
     },
     {
       "productId": "d14bc12e-573d-4393-95e5-c4b24ee00e6a",
@@ -16,10 +15,9 @@
       "brand": "Iphone",
       "description": "5.4-inch display",
       "color": "blue",
-      "price": "$650",
+      "price": "650",
       "discount": 79,
-      "imgUrl": "/assets/product-images/iphone12.jpeg",
-      "quantity": 6
+      "imgUrl": "/assets/product-images/iphone12.jpeg"
     },
     {
       "productId": "025b665a-e33d-4312-9dd0-61e1565082e7",
@@ -27,10 +25,20 @@
       "brand": "Samsung",
       "description": "6.5-inch display",
       "color": "gold",
-      "price": "3750,80",
+      "price": "470",
       "discount": 42,
-      "imgUrl": "/assets/product-images/galaxyS.png",
-      "quantity": 4
+      "imgUrl": "/assets/product-images/galaxyS.png"
+    },
+
+    {
+      "productId": "8a879a0a-43bb-4d9c-9b7b-84d93da31bec",
+      "title": "Iphone 12 Pro",
+      "brand": "Iphone",
+      "description": "6-inch display",
+      "color": "pink",
+      "price": "999",
+      "discount": 39,
+      "imgUrl": "/assets/product-images/iphone12pro.jpeg"
     }
   ]
   
