@@ -1,0 +1,36 @@
+ [
+    {
+      "productId": "3a879a0a-43bb-4d9c-9b7b-84d93da31bec",
+      "title": "Iphone 12 Pro",
+      "brand": "Iphone",
+      "description": "6-inch display",
+      "color": "pink",
+      "price": "$999",
+      "discount": 39,
+      "imgUrl": "/assets/product-images/iphone12pro.jpeg",
+      "quantity": 1
+    },
+    {
+      "productId": "d14bc12e-573d-4393-95e5-c4b24ee00e6a",
+      "title": "Iphone 12",
+      "brand": "Iphone",
+      "description": "5.4-inch display",
+      "color": "blue",
+      "price": "$650",
+      "discount": 79,
+      "imgUrl": "/assets/product-images/iphone12.jpeg",
+      "quantity": 6
+    },
+    {
+      "productId": "025b665a-e33d-4312-9dd0-61e1565082e7",
+      "title": "Galaxy S",
+      "brand": "Samsung",
+      "description": "6.5-inch display",
+      "color": "gold",
+      "price": "3750,80",
+      "discount": 42,
+      "imgUrl": "/assets/product-images/galaxyS.png",
+      "quantity": 4
+    }
+  ]
+  
